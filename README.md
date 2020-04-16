@@ -22,7 +22,9 @@ Developers are often tasked with creating interfaces that make it easy for non-d
 
 # Installation
 
-npm install npm i mysql
+npm install
+<br>
+npm i mysql
 
 # Usage
 

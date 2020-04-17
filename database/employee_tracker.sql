@@ -15,22 +15,23 @@ CREATE TABLE department (
 );
 
 CREATE TABLE department (
-id INTEGER NOT NULL AUTO_INCREMENT,
-  title VARCHAR(50),
-  salary INTEGER(10),
-  department_id numeric(10)
+id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(30),
+  PRIMARY KEY(id)
+  );
+
+CREATE TABLE role (
+  id INT NOT NULL AUTO_INCREMENT,
+  title VARCHAR(30) NOT NULL,
+  salary DECIMAL(15) NOT NULL,
+  department_id INT (10) NOT NULL
+ 
 );
 
 CREATE TABLE employee (
-  id INTEGER NOT NULL AUTO_INCREMENT,
+  id INT NOT NULL AUTO_INCREMENT,
   first_name VARCHAR(100) NOT NULL,
   last_name VARCHAR(100) NOT NULL,
-  role_id INTEGER (10) NOT NULL,
-  manager_id INTEGER (20) NOT NULL
-
-
-  -- Creates a boolean column called "five_times" that sets the default value to false if nothing is entered --
---   five_times BOOLEAN DEFAULT false,
---   score INTEGER(10),
---   PRIMARY KEY (id)
--- );
+  role_id INT (10) NOT NULL,
+  manager_id INT(20) NULL
+ );

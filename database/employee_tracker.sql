@@ -35,3 +35,20 @@ CREATE TABLE employee (
   role_id INT (10) NOT NULL,
   manager_id INT(20) NULL
  );
+
+-- Creates new rows containing data in all named columns --
+INSERT INTO department (id, name)
+-- VALUES ("Ahmed", true, "Rockington", 100);
+
+INSERT INTO role (id, title, salary, department_id )
+-- VALUES ("Ahmed", true, "Rockington", 100);
+
+INSERT INTO employee (id , first_name, last_name, role_id, manager_id)
+-- VALUES ("Jacob",true,"Misty",10);
+
+-- Updates the row where the column name is peter --
+UPDATE employee
+SET has_pet = true, pet_name = "Franklin", pet_age = 2
+WHERE id = 4;
+
+SELECT * FROM people;

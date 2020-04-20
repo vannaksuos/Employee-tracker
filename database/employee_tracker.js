@@ -155,7 +155,6 @@ function addDepartmentFunction () {
         connection.query("INSERT INTO department (name) VALUES ("+ answer.departmentName +")")
     })
 }
-// adding employye and adding role:
 function addEmployeeFunction () {
     inquirer
     .prompt({

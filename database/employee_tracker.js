@@ -3,29 +3,29 @@ var inquirer = require("inquirer");
 
 // create the connection information for the sql database
 var connection = mysql.createConnection({
-  host: "localhost",
+host: "localhost",
 
   // Your port; if not 3306
-  port:3306,
+port:3306,
 
   // Your username
-  user: "root",
+user: "root",
 
   // Your password
-  password:"abc123",
-  database: "employeetracker"
+password:"abc123",
+database: "employeetracker"
 });
 
 // connect to the mysql server and sql database
 connection.connect(function(err) {
-  if (err) throw err;
+if (err) throw err;
   // run the start function after the connection is made to prompt the user
-  start();
+start();
 });
 
 // function which prompts the user for what action they should take
 function start() {
-  inquirer
+inquirer
     .prompt({
         message: "What would you like to do?",
         name: "toDo",
@@ -37,17 +37,17 @@ function start() {
 .then(function(answer) {
     // based on their answer, either call the bid or the post functions
     if (answer.toDo ==="Add departments, roles, employees")
- {
-     runAddFunction();
+{
+    runAddFunction();
     }
     else if(answer.toDo === "View departments, roles, employees") {
-      runViewFunction();
- }    else if(answer.toDo === "Update employee roles") {
+    runViewFunction();
+}    else if(answer.toDo === "Update employee roles") {
         upDateEmployeeRoleFunction();  
     } else{
-      connection.end();
+    connection.end();
     }
-  });
+});
 }
 
 function runAddFunction() {
@@ -101,7 +101,7 @@ function viewDepartment() {
     function(error, data) {
         if (error) throw err;
         console.log(data)
-      })
+})
 
 }
 
@@ -110,16 +110,15 @@ function viewRole() {
     function(error, data) {
         if (error) throw err;
         console.log(data)
-      })
+})
 
 }
 
 function viewEmployee() {
-    connection.query ("SELECT * FROM employee",
-    function(err, data) {
+    connection.query ("SELECT * FROM employee",function(err, data) {
         if (err) throw err;
         console.log(data)
-      })
+    })
 
 }
 
@@ -134,13 +133,13 @@ function updateFunction() {
     ]})
     .then(function(answer) {
         if (answer.toDo === "departments") {
-           updateDepartment();
+        updateDepartment();
         }
         else if(answer.toDo === "roles") {
-           updateRole ();
+        updateRole ();
         }
         else if(answer.toDo === "employees") {
-           updateEmployee();
+        updateEmployee();
         }
     })
 }
@@ -154,7 +153,10 @@ function addDepartmentFunction () {
     .then(function(answer){
         connection.query("INSERT INTO department (name) VALUES ("+ answer.departmentName +")")
     })
+   
 }
+// addDepartmentFunction();
+
 function addEmployeeFunction () {
     inquirer
     .prompt({
@@ -165,6 +167,7 @@ function addEmployeeFunction () {
         connection.query("INSERT INTO employee (name) VALUES ("+ answer.employeeName +")")
     })
 }
+    // addEmployeeFunction();
 
 function addRoleFunction () {
     inquirer
@@ -176,3 +179,4 @@ function addRoleFunction () {
         connection.query("INSERT INTO roles (name) VALUES ("+ answer.roleName +")")
     })
 }
+    // addRoleFunction();

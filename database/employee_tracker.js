@@ -153,7 +153,6 @@ function addDepartmentFunction () {
     .then(function(answer){
         connection.query("INSERT INTO department (name) VALUES ("+ answer.departmentName +")")
     })
-   
 }
 // addDepartmentFunction();
 

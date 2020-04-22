@@ -22,10 +22,14 @@ Developers are often tasked with creating interfaces that make it easy for non-d
 <br/>1. Title<br/>2. Description<br/>3. Table of Contents<br/>4. Installation<br/>5. Usage<br/>6. License<br/>7. Contribution<br/>8. Tests<br/>9. Questions<br/>10. Demo<br/>
 
 # Installation
-
+npm init
+<br>
 npm install
 <br>
-npm i mysql
+npm i mysql<br>
+<br>
+npm i console.table
+
 
 # Usage
 
@@ -50,3 +54,4 @@ travics cl
 vannaksuos@gmail.com
 
 # Demo
+![employeetraciker](https://user-images.githubusercontent.com/59664686/80029255-89da8280-84b4-11ea-99ce-abab2a691202.gif)

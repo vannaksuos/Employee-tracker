@@ -26,7 +26,7 @@ npm init
 <br>
 npm install
 <br>
-npm i mysql<br>
+npm i mysql
 <br>
 npm i console.table
 
@@ -49,7 +49,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 travics cl
 
-# Email
+# If you have any question you would like to ask me you can email me at 
 
 vannaksuos@gmail.com
 

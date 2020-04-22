@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "# Email:Vannaksuos@gmail.com",
   "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode development"
+  },
+  
   "dependencies": {
     "console.table": "^0.10.0",
     "inquirer": "^7.1.0",
@@ -10,10 +14,8 @@
     "mysql": "^2.18.1",
     "travis-ci": "^2.2.0"
   },
-  "devDependencies": {},
-  "scripts": {
-    "build": "webpack --mode development"
-  },
+  "devDependencies": { "mocha": "^7.1.1"},
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vannaksuos/Employee-tracker.git"

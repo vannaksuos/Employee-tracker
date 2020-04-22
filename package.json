@@ -1,0 +1,27 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "# Email:Vannaksuos@gmail.com",
+  "main": "index.js",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^7.1.0",
+    "json": "^9.0.6",
+    "mysql": "^2.18.1",
+    "travis-ci": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vannaksuos/Employee-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vannaksuos/Employee-tracker/issues"
+  },
+  "homepage": "https://github.com/vannaksuos/Employee-tracker#readme"
+}

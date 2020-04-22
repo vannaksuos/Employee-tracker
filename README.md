@@ -11,7 +11,7 @@ https://vannaksuos.github.io/Employee-Managment-System/
 
 # Badges
 
-[![Build Status](https://travis-ci.com/vannaksuos/Employee-tracker.svg?branch=master)](https://travis-ci.com/vannaksuos/Employee-tracker)
+[![Build Status](https://travis-ci.com/vannaksuos/Employee-Managment-System.svg?branch=master)](https://travis-ci.com/vannaksuos/Employee-Managment-System)
 
 # Description
 

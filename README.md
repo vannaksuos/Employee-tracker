@@ -5,9 +5,9 @@
 
 # Deploy Github link
 
-https://vannaksuos.github.io/Employee-tracker/
+https://vannaksuos.github.io/Employee-Managment-System/
 
-# Title:Employee tracker
+# Title:Employee Managment System
 
 # Badges
 

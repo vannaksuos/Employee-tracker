@@ -26,7 +26,7 @@ npm init
 <br>
 npm install
 <br>
-npm i mysql<br>
+npm i mysql
 <br>
 npm i console.table
 

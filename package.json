@@ -11,9 +11,7 @@
     "console.table": "^0.10.0",
     "inquirer": "^7.1.0",
     "json": "^9.0.6",
-    "mysql": "^2.18.1",
-    "travis-ci": "^2.2.0",
-    "underscore.string": ">=3.3.5"
+    "mysql": "^2.18.1"
   },
   "devDependencies": { "mocha": "^7.1.1"},
   

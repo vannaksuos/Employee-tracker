@@ -1,14 +1,8 @@
 language: ruby
 language: rake
 language: node_js
-rvm:
- - 2.2
- - jruby
-#...
-before_install:
-  - sudo apt-get install fontforge eot-utils
+- npm install
 
-  - npm install -g grunt-cli
-  - npm install
-script:
-  - grunt test
+rvm:
+- 2.2
+- jruby

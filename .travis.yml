@@ -7,9 +7,8 @@ rvm:
 - 2.2
 - jruby
 
- 
   language: node_js
-   - "stable"
+  - "stable"
 node_js: "12"
 branches:
   only:

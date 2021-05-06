@@ -6,7 +6,7 @@
   "dependencies": {
     "console.table": "^0.10.0",
     "inquirer": "^7.1.0",
-    "json": "^9.0.6",
+    "json": "^10.0.0",
     "mysql": "^2.18.1",
     "travis-ci": "^2.2.0",
     "underscore.string": "^3.3.5"
